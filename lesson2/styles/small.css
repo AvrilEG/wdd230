@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
 	font-size: 18px;
 	font-family: 'Raleway', sans-serif;
@@ -6,21 +11,21 @@ body {
 main {
 	max-width: 767px;
 	margin: 0 auto;
+    padding: .5rem;
 	display: grid;
 	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+	font-size: 1rem;
 }
 
-
 main section h2 {
-	color: #4C5A8A;
+	color: #C7495C;
 }
 
 main section {
 	margin: 0.5rem;
 	border: 1px solid #FCF7F4;
 	padding: 0 1rem;
-	background-color: #DEDAD7;
+	background-color: #c2cacacc;
 }
 
 footer a {
@@ -42,7 +47,7 @@ section  img {
     margin-bottom: 1.5rem;
     font-size: 16px;
     text-align: center;
-    color: #4C5A8A;
+    color: #535150;
     padding: 5px;
     text-align: center;
   }
@@ -54,7 +59,7 @@ section  img {
 
 
 header {
-    background-color:#56669D;
+    background-color:#C7495C;
     padding: 1.5rem; 
     border-radius: 10px;
 }
@@ -69,22 +74,20 @@ h1 {
 
 
 h2 {
-    
     color: #FCF7F4;
-    text-align: center;
-    font-size: 1.7rem;
+    text-align: left;
+    font-size: 1.4rem;
 }
 
 p {
-    
-    color: #3f4c77;
-    font-size: 16px;
-}
+        color: #535150;
+        padding: .5rem;
+   }
 
 footer {
     height: 1.5rem;
     padding: 1.5rem;
-    background-color: #56669D;
+    background-color: #C7495C;
     color: #FCF7F4;
     text-align: center;
     border-radius: 10px;
