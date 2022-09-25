@@ -24,6 +24,7 @@ main section h2 {
 main section {
 	margin: 0.5rem;
 	border: 1px solid #FCF7F4;
+    border-radius: 25px;
 	padding: 0 1rem;
 	background-color: #c2cacacc;
 }
@@ -32,10 +33,6 @@ footer a {
     color: #FCF7F4;
   }
 
-main section:nth-child(2) {
-	display: none;
-	margin: 0.5rem;
-}
 section  img {
     max-width: 90%;
     box-shadow: 0 0 5px;
@@ -43,14 +40,12 @@ section  img {
   }
 
   section  a {
+    padding: 1rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    font-size: 16px;
-    text-align: center;
     color: #535150;
     padding: 5px;
-    text-align: center;
-  }
+}
 
   header, main, footer {
     max-width: 760px;
@@ -65,18 +60,17 @@ header {
 }
 
 h1 {
-    
     color: #FCF7F4;
     text-align: center;
     font-size: 3rem;
 }
 
-
-
 h2 {
+    padding: .7rem;
     color: #FCF7F4;
     text-align: left;
     font-size: 1.4rem;
+    /*background-color: #1f1f1e;*/
 }
 
 p {
