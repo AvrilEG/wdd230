@@ -1,0 +1,70 @@
+
+@media only screen and (min-width: 32.5em) {
+	header {
+		flex-direction: column;
+	}
+
+	.headings h1 {
+		font-size: 2rem;
+		margin: 0;
+        font-weight: 900; 
+	}
+
+	.m {
+        display: block;
+        letter-spacing: .5pt;
+	    color: #742b08;
+	    font-weight: 600;
+	    font-size: 1rem;
+		letter-spacing: 1.5pt;
+		font-size: 0.9rem;
+	}
+	nav {
+	display: block;
+	}
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.hero {
+		grid-column: span 2;
+	}
+
+	.news {
+		grid-column: span 2;
+	}
+
+	.spotlight {
+		grid-column: span 2;
+	}
+
+	.join {
+		grid-column: span 2;
+	}
+
+	.event {
+		grid-column: 1/2;
+	}
+
+	.weather {
+		grid-column: 2/3
+	}
+
+	
+}
+  
+
