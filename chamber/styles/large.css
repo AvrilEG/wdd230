@@ -1,4 +1,23 @@
 @media only screen and (min-width: 60em) {
+    nav button {
+        display: none;
+    }
+    
+    nav ul#primary_nav {
+		display: flex;
+        justify-content: flex-end;
+	}
+
+    nav ul li a {
+        border: none;
+        padding: .5rem 1rem;  
+    }
+	
+    .social {
+        order: 1;
+
+    }
+    
 	main {
 		grid-template-columns: 1fr 1fr 1fr;
 
