@@ -5,6 +5,13 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
+.meet {
+	margin: 0 auto;
+	padding: 1rem;
+	justify-content: center;
+	background-color: #3f5b55;
+	color: whitesmoke;
+}
 
 header, footer {
 	background-color: whitesmoke;
@@ -115,8 +122,7 @@ div {
     display: flex;
 }
 
-.date,
-aside {
+.date {
 	display: flex;
 	margin: 0.5rem;
 	color: #3f5b55;
@@ -142,7 +148,26 @@ main section {
 	color: whitesmoke;
 }
 
+.herodiv {
+	margin: 10px auto;
+	position: relative;
+}
+
+.heroimg {
+	max-width: 100%;
+}
+
+.herotxt {
+	position: absolute;
+	top: 15px;
+	right: 50px;
+	padding: 1.5rem;
+		
+}
+
 h3 {
+	font-size: 2rem;
+	color: #742b08;
 	padding: .5rem;
 }
 
