@@ -157,9 +157,9 @@ main section {
 
 .herotxt {
 	position: absolute;
-	top: 20px;
-	right: 50px;
-	padding: 1.5rem;		
+	top: 1px;
+	right: 5px;
+	padding: .5rem;		
 }
 
 h3 {
