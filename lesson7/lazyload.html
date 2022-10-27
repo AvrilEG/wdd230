@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progressive Loading of Images</title>
+    <meta
+      name="description"
+      content="Progressive loading of images using the lazy load and IntersectionObserver"
+    />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/lazyload.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"/>
+
+    <script defer src="./scripts/lazyload.js"></script>
+  </head>
+  <body>
+    <h1>Emy's Pictures</h1>
+
+    <div class="pictures">
+      <picture
+        ><img
+          src="images/Placeholder.png"
+          data-src="images/Emy_baby.png"
+          alt="Emilia de Bebe"
+        />
+      </picture>
+
+      <picture
+        ><img
+          src="images/Placeholder.png"
+          data-src="images/Emy.png"
+          alt="Emilia en Preescolar"
+        />
+      </picture>
+
+      <picture
+        ><img
+          src="images/Placeholder.png"
+          data-src="images/Emy_Larrea.png"
+          alt="Primer día de clases en primaria"
+        />
+      </picture>
+
+      <picture
+        ><img
+          src="images/Placeholder.png"
+          data-src="images/Emy_Dolores.png"
+          alt="Dolores, Hidalgo"
+        />
+      </picture>
+
+      <picture
+        ><img
+          src="images/Placeholder.png"
+          data-src="images/Emy_jaguar.png"
+          alt="Día del Jaguar"
+        />
+      </picture>
+
+      <picture
+        ><img
+          src="images/Placeholder.png"
+          data-src="images/Emy_BOM.png"
+          alt="Emilia reciente"
+        />
+      </picture>
+    </div>
+  </body>
+</html>
