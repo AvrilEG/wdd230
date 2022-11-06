@@ -176,8 +176,9 @@ h3 {
 	align-items: center;
 }
 
-h2 .join-form {
+form h2  {
 	text-align: center;
+	color: #3f5b55;
 }
 
 form fieldset {
