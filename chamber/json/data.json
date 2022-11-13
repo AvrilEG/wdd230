@@ -1,0 +1,78 @@
+{
+    "members": [
+      {
+        "name": "Coyotas Malu",
+        "address": "Revolución 21 A, Villa de Seris.",
+        "city": "Hermosillo, Sonora",
+        "phonenumber": "662 250-9735",
+        "website": "coyotasmalu.com.mx",
+        "logo": "images/malu.webp",
+        "membershiplevel": "silver"
+      },
+      {
+        "name": "Lutisuc",
+        "address": "ignacio Comonfort 50-E, Segundo Piso, Plaza Bicentenario. Col. Centenario",
+        "city": "Hermosillo, Sonora",
+        "phonenumber": "662 210-4081",
+        "website": "lutisuc.org",
+        "image": "None",
+        "membershiplevel": "free"   
+      },
+      {
+        "name": "Joseph",
+        "address": "Smith",
+        "phonenumber": "23 December 1805",
+        "website": "27 June 1844",
+        "image": 14,
+        "membershiplevel": 1 
+      },
+      {
+        "name": "Joseph",
+        "address": "Smith",
+        "phonenumber": "23 December 1805",
+        "website": "27 June 1844",
+        "image": 14,
+        "membershiplevel": 1 
+      },
+      {
+        "name": "Joseph",
+        "address": "Smith",
+        "phonenumber": "23 December 1805",
+        "website": "27 June 1844",
+        "image": 14,
+        "membershiplevel": 1 
+      },
+      {
+        "name": "Joseph",
+        "address": "Smith",
+        "phonenumber": "23 December 1805",
+        "website": "27 June 1844",
+        "image": 14,
+        "membershiplevel": 1
+      },
+      {
+        "name": "Joseph",
+        "address": "Smith",
+        "phonenumber": "23 December 1805",
+        "website": "27 June 1844",
+        "image": 14,
+        "membershiplevel": 1  
+      },
+      {
+        "name": "Joseph",
+        "address": "Smith",
+        "phonenumber": "23 December 1805",
+        "website": "27 June 1844",
+        "image": 14,
+        "membershiplevel": 1  
+      },
+      {
+        "name": "Joseph",
+        "address": "Smith",
+        "phonenumber": "23 December 1805",
+        "website": "27 June 1844",
+        "image": 14,
+        "membershiplevel": 1  
+      } 
+    ]
+  }
