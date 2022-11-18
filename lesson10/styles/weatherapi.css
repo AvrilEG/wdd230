@@ -1,0 +1,15 @@
+
+body {
+    font-size: 16pt;  
+    font-family: 'Josefin Sans', sans-serif;    
+}
+
+div {
+    max-width: 800px;
+    text-align: center;
+    margin: 10px auto;
+}
+h1, h2, h3 {
+    color: #742b08;
+}
+
