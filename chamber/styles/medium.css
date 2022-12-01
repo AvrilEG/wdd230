@@ -1,62 +1,152 @@
-
-@media only screen and (min-width: 32.5em) {
-
-	header img {
-		width: 100%;
-	}
-	
-	.headings h1 {
-		font-size: 2rem;
-		margin: 0;
-        font-weight: 900; 
-	}
-
-	.m {
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+    .m {
         display: block;
-        letter-spacing: .5pt;
-	    color: #742b08;
+        color: #742b08;
 	    font-weight: 600;
 	    font-size: 1rem;
 		letter-spacing: 1.5pt;
-		font-size: 0.9rem;
-	}
-	
-	
-
-	
-	
-	
-	
-
-	main {
-		grid-template-columns: 1fr 1fr;
 	}
 
-	.hero {
-		grid-column: span 2;
-	}
+    .logo img{
+        width: 90px;
 
-	.news {
-		grid-column: span 2;
-	}
+    }
+    .social img {
+        width: 40px;
 
-	.spotlight {
-		grid-column: span 2;
-	}
+    }
 
-	.join {
-		grid-column: span 2;
-	}
+    .content-header h1{
 
-	.event {
-		grid-column: 1/2;
-	}
+        font-size: 29px;
+    }
 
-	.weather {
-		grid-column: 2/3
-	}
+    
+        .navigation {
+            display: flex;
+        }
+        .navigation li {
+            display: block; /* change state in small view */
+            flex: 1 1 auto;
+        }
+        .navigation a {
+            text-align: center;
+        }
+        .navigation li:first-child {
+            display: none;
+        }
+    .responsive{
+        position: absolute;
+          top:120px;
 
-	
+    }
+    
+        main {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: 250px 200px 300px 200px 250px;
+        }
+        .hero {
+            grid-column: 1/3;
+           
+        }
+        
+        }
+
+        .join a {
+            display: flex;
+            justify-content: center;
+        }
+        
+
+
+        .spolight {
+            grid-column: 1/3;
+            grid-row: 3/4;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .spotlight-3{
+            display: none;
+        }
+        
+        
+		header,
+        nav,
+        main,
+        footer {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 2px 70px;
 }
-  
 
+
+.logo-box-two {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.title-footer {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    font-size: 20px;
+    justify-self: end;
+    align-self:center;
+}
+
+.address-footer{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    font-size: 16px;
+    justify-self: center;
+    align-self: center;
+}
+.email-footer{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 16px;
+}
+
+.phone-footer{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: center;
+    font-size: 16px;
+} 
+.map-footer {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+    font-size: 16px;
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------------
+ Discover Page
+ */
+
+ 
+
+/*Join Page*/
+
+
+
+/* Contact us page*/

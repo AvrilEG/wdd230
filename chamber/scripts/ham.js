@@ -1,26 +1,9 @@
-function toggleMenu() {
-    document.getElementById(primary_nav).classList.toggle("open");
-}
+// Store the selected elements that we are going to use. 
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('.menu');
 
-const x = document.getElementById("hamburger_btn");
+// Add a simple arrow function that listens for the <li> hamburger button click event.
+// When clicked, the <ul class="navigation">'s class list toggle'
+hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
-x.onclick= toggleMenu;//
-
-
-
-
-
-
-
-
-
-
-//const hambutton = document.querySelector('.ham');
-//const mainnav = document.querySelector('.navigation')
-
-//hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-// To solve the mid resizing issue with responsive class on
-//window.onresize = () => {if (window.innerWidth > 760) 
-//mainnav.classList.remove('responsive')};
 

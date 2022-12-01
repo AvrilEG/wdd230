@@ -1,228 +1,359 @@
-body {
-	padding: 0;
+* {
 	margin: 0;
-	max-width: 100%;
-    font-size: 18px;
-	font-family: 'Raleway', sans-serif;
-	
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Merriweather Sans', sans-serif;
+	background-color: #f2f2f2;
+}
+
+a:link { 
+    text-decoration: none;
 }
 
 .meet {
-	display: flex;
-	margin: 0 auto;
-	padding: 1rem;
-	justify-content: center;
-	font-weight: bold;
-	background-color: #3f5b55;
-	color: whitesmoke;
-}
-
-header, footer {
 	background-color: whitesmoke;
-	padding: 1rem;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 100%;
-	}
-
-.logo {
-	display: flex;
-	margin-left: 1rem;
-	padding: .3rem;
+	color:#3f5b55;
 }
-
-.logo img {
-	width: 100px;
-	height: auto;
-}
-
-.headings {
-	flex-direction: column;
-	margin-left: 1.2rem;
-	margin-top: 1.5rem;
-}
-
-.headings h1 {
-	font-size: 2.5rem;
-    color: #3f5b55;
-    font-weight: 900;
+h1 {
+    color: #742b08;	
 }
 
 .m {
-	display: none;
+  	display: none;
 }
 
-nav button {
-	margin: .2rem 2vw;
-	background: transparent;
-	font-size: 2rem;
-	color: #3f5b55;
+h2, h3{
+	color: #3f5b55;	
+}
+
+/*Header*/
+
+header {
+	display:grid;
+	grid-template-columns: 0.3fr 1fr 0.4fr 0.3fr;
+	grid-template-rows: 90px 35px;
+	gap: 5px;
+    padding: .5rem;
+	justify-items: center;	
 }
 
 nav {
 	margin: 0 auto;
-	background-color: whitesmoke;
+	max-width: 760px;
 }
 
-nav ul {
-	list-style-type: none;
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-
-nav ul li a {
+.navigation li:first-child {
 	display: block;
-	padding: .8rem 2vw;
-	font-weight: bold;
-	text-decoration: none;
-	color: #3f5b55;
-	border-top: 1px solid darkgray;
 }
-
-nav ul li.active a {
-	background-color: #3f5b5550;
-}
-
-nav ul li a:hover {
-	background-color: rgba(128, 128, 128, 0.556);
-}
-
-nav ul {
+.navigation li {
 	display: none;
 }
-
-nav ul.open {
+.navigation a {
 	display: block;
-}
-
-#hamburger_btn span:nth-child(1) {
-	display: block;
-}
-
-#hamburger_btn span:nth-child(2) {
-	display: none;
-}
-
-#hamburger_btn.open span:nth-child(1) {
-	display: none;
-}
-
-#hamburger_btn.open span:nth-child(2) {
-	display: block;
-}
-
-.social {
-	margin-right: 1.7rem;
-}
-
-.social svg {
-	width: 25px;
-	height: auto;
-}
-
-.date {
-	display: flex;
-	margin: 0.5rem;
-	color: #3f5b55;
 	padding: 0.75rem;
-	justify-content: center;
-	font-style: italic;	
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-main {
-	display: grid;
-	grid-gap: .5rem;
-	margin: 0 auto;
-	padding: .3rem;
-	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+.menu::before {
+	content: "≡";
+	font-size: 2rem;
 }
 
-main section {
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.menu::before {
+	content: "X";
+}
+
+.menu{
+	padding: 0.75rem;
+}
+
+.responsive{
+	position: absolute;
+  	top:130px;
+	left:0%;
 	width: 100%;
-	height: auto;
-	border: 1px solid cadetblue;
-	background-color: cadetblue;
-	color: whitesmoke;
+  	z-index: 100;
+	
+}
+.logo, .headings, .social {
+	justify-self: center;
+	align-self: center;
+	
 }
 
-.herodiv {
-	margin: 10px auto;
-	position: relative;
+.headings h1 {
+	font-size: 2rem;
+	text-align: center;
 }
 
-.heroimg {
-	max-width: 10%;
+.social img {
+	width: 30px;
+	justify-self: center;
+	align-self: center;
+}
+
+ nav {
+	justify-self: center;
+	align-self: center;
+ }
+
+
+
+.paragraph-header{
+	font-size: 14px;
+	padding: 0;
+	color: #3f5b55;
+}
+
+.date{
+	grid-column: 1/5;
+	grid-row: 2;
+    margin: 0.5rem;
+	padding: 0.75rem;
+	justify-self: center;
+	align-self: center;
+	font-size: 13px;
+	width: 90%;
+	text-align: center;
+	color: #3f5b55;
+	font-style: italic;	
 }
 
 .herotxt {
 	position: absolute;
 	top: 1px;
 	right: 5px;
-	padding: .5rem;		
+	padding: .5rem;	
+    
 }
 
-h3 {
-	font-size: 2rem;
-	color: #742b08;
-	padding: .5rem;
+.herotxt h3 {
+    color: 	#742b08;
 }
 
-/* ----------------FORM-------------*/
 
-.join-form {
-	display: flex;
-	justify-content: center;
+
+/*Here starts the main config*/
+
+ main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 200px 250px 240px 250px 1fr;
+	font-size: 0.8rem;
+}
+
+.herodiv {
+	
+	padding: 0%;
+	position: relative;
+	opacity: 0.8;
+}
+.heroimg {
+
+	position: relative;
+	box-shadow: unset;
+	
+}
+
+.heroimg img {
+	max-width: 95%;
+	padding: .3rem;
 	align-items: center;
+	justify-content: center;
+	
+	
+	
 }
 
-form h2  {
-	text-align: center;
-	color: #3f5b55;
-}
 
-form fieldset {
-	margin: 2rem 0;
-	border: 3px solid #742b08;
-	border-radius: 15px;
-	padding: 0.5rem 2%;
-  }
-  
-  form legend {
-	color: #742b08;
-	margin: 0 1rem;
-	padding: 0 0.5rem;
-  }
-  
-  form label.top {
-	display: block;
-	padding-top: 1rem;
-	color: #742b08;
-	font-size: 1rem;
-  }
-  
-  form label.top input   {
-	display: block;
-	font-size: 1rem;
-	border: solid 1px #742b08;
-	border-radius: 4px;
-	padding: 0.75rem;
-	color: #742b08;
-	width: 100%;
-	max-width: 20rem;
-	background-color: whitesmoke;
-  }
-  
-   
-  form input.submit-button {
+.herotext h3{
+	display: inline;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	color: #0c295e;
+
+
+
+}
+.button-hero {
+	position: absolute;
+	bottom: 50px;
+	right: 30px;
+	border-radius: 10px;
+	padding: 10px;
 	border: none;
-	background-color: #742b08;
-	color: white;
-	border-radius: 1rem;
-	padding: 0.75rem 1.5rem;
-	margin: 0 0 2rem 2%;
-	width: 96%;
-	max-width: 20rem;
+    background-color: #742b08;
+    color: whitesmoke;
+    border-radius: 0.75rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 27%;
+    width: 96%;
+    max-width: 10rem;
+	
+}
+
+
+.weather h2 {
+	grid-column: 1/3;
+	text-align: center;
+}
+
+.weather-image {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	justify-self: center;
+	align-self: center;
+}
+
+#weather-temp {
+
+	grid-column: 2/3;
+	grid-row: 2/3;
+	justify-self: center;
+	align-self: center;
+}
+
+.weather-windspeed {
+
+	grid-column: 1/2;
+	grid-row: 5/6;
+}
+
+.weather-windchill {
+	grid-column: 1/2;
+	grid-row: 6/7;
+}
+
+#weather-windspeedresult {
+	grid-column: 2/3;
+	grid-row: 5/6;
+	justify-self: center;
+	align-self: center;
+}
+
+#weather-windchillresult {
+	grid-column: 2/3;
+	grid-row: 6/7;
+	justify-self: center;
+	align-self: center;
+	color:rgb(10, 59, 42);
+}
+
+
+
+
+
+.join {
+	display:none;
+}
+
+.spolight{
+	grid-row: 5/6;
+	display:flex;
+	flex-grow: 2;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	padding: 6px;
+	gap:6px;
+	
+}
+
+
+.spotlight-1 {
+
+	display: flex;
+	flex-flow: column;
+	gap: 3px;
+	
+}
+
+.spotlight-2 {
+
+	display: flex;
+	flex-flow: column;
+	gap: 3px;
+	
+}
+
+main section{
+	margin: .5rem;
+	padding: 4rem;
+	box-shadow: 0 2px 15px #6B7AA1;
+	background-color:#f7f5f1;
+
+}
+
+.spotlight-1, .spotlight-2{
+	padding: 1rem;
+	width: 100%;
+	background-color: #4c6f677c;
+}
+section .spotlight-3{
+	display: none;
+}
+header,
+nav,
+main,
+footer {
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+/*Here starts the footer config*/
+
+
+footer{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 250px 5px 100px;
+	align-content: center;
+	justify-content: center;
+	background-color: darkgray;
+	
+	
+}
+
+
+
+.title-footer{
+	font-size: 16px;
+}
+
+.line {
+	background-color: black;
+	margin: 5px;
   }
-  
-  
+
+/*Discover page*/
+
+
+/*-------------------FORM - JOIN PAGE ---------------*/
+
+/*Directory page*/
+
